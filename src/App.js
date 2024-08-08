@@ -54,7 +54,17 @@ function App() {
       <section className="project">
         <div className="project-container">
           <img className="main-img" src={Project1MainImg} alt="" />
-          <img className="support-img" src={Project1SupportImg} alt="" />
+          <picture>
+            <source
+              media="(min-width: 800px) and (max-width: 1099px)"
+              srcset={require("../src/assets/shoe-master-mobile.png")}
+            />
+            <img
+              className="support-img"
+              src={Project1SupportImg}
+              alt="Responsive image"
+            />
+          </picture>
           <div className="project-info">
             <div className="title">
               <h3>Shoe Master - Ecommerce Website</h3>
@@ -91,7 +101,18 @@ function App() {
         </div>
         <div className="project-container">
           <img className="main-img" src={Project2MainImg} alt="" />
-          <img className="support-img" src={Project2SupportImg} alt="" />
+          <picture>
+            <source
+              media="(min-width: 800px) and (max-width: 1099px)"
+              srcset={require("../src/assets/recipe-and-blog-mobile.png")}
+            />
+            <img
+              className="support-img"
+              src={Project2SupportImg}
+              alt="Responsive image"
+            />
+          </picture>
+
           <div className="project-info">
             <div className="title">
               <h3>Recipe & Blogs - Recipe Website</h3>

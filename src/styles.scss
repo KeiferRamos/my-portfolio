@@ -18,12 +18,17 @@ nav {
   color: #3fc1c9;
   font-size: 15px;
   font-weight: bold;
+
+  @media (max-width: 1100px) {
+    padding: 20px;
+  }
 }
 
 footer {
   display: flex;
   align-items: end;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0 100px 20px 100px;
 
   .footer-description {
@@ -37,15 +42,21 @@ footer {
   .links {
     display: flex;
     gap: 10px;
+    margin-top: 40px;
 
     img {
       width: 30px;
     }
   }
-}
 
-.App {
-  width: 100%;
+  @media (max-width: 800px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 10px;
+    margin-top: 40px;
+  }
 }
 
 .hero-banner {
@@ -117,6 +128,40 @@ footer {
       width: 35px;
     }
   }
+
+  @media (max-width: 1250px) {
+    .links {
+      left: 20px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .projects-link {
+      top: 80%;
+    }
+    .links {
+      bottom: 10%;
+      img {
+        width: 25px;
+      }
+    }
+    justify-content: start;
+    h1 {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 15px;
+    }
+  }
 }
 
 .project {
@@ -136,9 +181,25 @@ footer {
       position: absolute;
       top: 85%;
       left: 20px;
-      width: 680px;
+      width: 650px;
       object-fit: contain;
       border-radius: 10px;
+    }
+
+    @media (max-width: 1100px) {
+      margin-bottom: 600px;
+      .support-img {
+        width: 300px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      margin-bottom: 30px;
+
+      .support-img {
+        width: 100%;
+        position: inherit;
+      }
     }
   }
 
@@ -152,6 +213,7 @@ footer {
     .title {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
 
       div {
         display: flex;
@@ -163,6 +225,16 @@ footer {
         width: 30px;
         height: 30px;
       }
+    }
+
+    @media (max-width: 1100px) {
+      position: inherit;
+      width: 55%;
+    }
+
+    @media (max-width: 800px) {
+      padding-left: 0;
+      width: 100%;
     }
   }
 
@@ -197,5 +269,13 @@ footer {
     span {
       color: #fc5185;
     }
+  }
+
+  @media (max-width: 1250px) {
+    padding: 100px 20px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 10px;
   }
 }
