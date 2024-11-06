@@ -4,7 +4,10 @@ import FbIcon from "../src/assets/facebook.png";
 import GithubIcon from "../src/assets/github (1).png";
 import ContentfulIcon from "../src/assets/62c714f2b44be1961554a6d4.png";
 import GatsbyIcon from "../src/assets/icons8-gatsbyjs-480.png";
+import FigmaIcon from "../src/assets/figma.png";
 import Project1MainImg from "../src/assets/shoe-master-main.png";
+import Project3MainImg from "../src/assets/kepper-s-realty-website.png";
+import Project3SupportImg from "../src/assets/property list page.png";
 import Project2MainImg from "../src/assets/recipe-and-blog-main.png";
 import Project1SupportImg from "../src/assets/Screenshot 2024-08-07 at 10.45.30 AM.png";
 import Project2SupportImg from "../src/assets/Screenshot 2024-08-07 at 3.33.32 PM.png";
@@ -53,6 +56,35 @@ function App() {
       </section>
       <section className="project">
         <div className="project-container">
+          <img className="main-img" src={Project3MainImg} alt="" />
+          <picture>
+            <img
+              className="support-img"
+              src={Project3SupportImg}
+              alt="Responsive image"
+            />
+          </picture>
+          <div className="project-info">
+            <div className="title">
+              <h3>Real Estate - Web Design</h3>
+              <a
+                href="https://www.figma.com/design/bky3T5pTAEV0D5AaWpV8KL/kepper's-realty?node-id=0-1&t=HKjLuST6lhpiMCy9-1"
+                target="_blank"
+              >
+                <img src={FigmaIcon} alt="" />
+                <p>Design File</p>
+              </a>
+            </div>
+
+            <div className="project-description">
+              <p>
+                I'm Currently working on this project right now. It will be a
+                fully static website. Build with GatsbyJs. Coming soon.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="project-container">
           <img className="main-img" src={Project1MainImg} alt="" />
           <picture>
             <source
@@ -68,10 +100,13 @@ function App() {
           <div className="project-info">
             <div className="title">
               <h3>Shoe Master - Ecommerce Website</h3>
-              <div>
+              <a
+                href="https://github.com/KeiferRamos/shoe-ecommerce"
+                target="_blank"
+              >
                 <img src={GithubIcon} alt="" />
                 <p>source code</p>
-              </div>
+              </a>
             </div>
             <div className="project-tools">
               <div>
@@ -116,10 +151,13 @@ function App() {
           <div className="project-info">
             <div className="title">
               <h3>Recipe & Blogs - Recipe Website</h3>
-              <div>
+              <a
+                href="https://github.com/KeiferRamos/recipe-and-blogs"
+                target="_blank"
+              >
                 <img src={GithubIcon} alt="" />
                 <p>source code</p>
-              </div>
+              </a>
             </div>
             <div className="project-tools">
               <div>
