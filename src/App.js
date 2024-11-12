@@ -81,6 +81,10 @@ function App() {
                 I'm Currently working on this project right now. It will be a
                 fully static website. Build with GatsbyJs. Coming soon.
               </p>
+              <p>
+                Check it{" "}
+                <a href="https://www.figma.com/design/bky3T5pTAEV0D5AaWpV8KL/kepper's-realty?node-id=0-1&t=HKjLuST6lhpiMCy9-1"></a>
+              </p>
             </div>
           </div>
         </div>
