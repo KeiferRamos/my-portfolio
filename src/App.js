@@ -83,7 +83,9 @@ function App() {
               </p>
               <p>
                 Check it{" "}
-                <a href="https://www.figma.com/design/bky3T5pTAEV0D5AaWpV8KL/kepper's-realty?node-id=0-1&t=HKjLuST6lhpiMCy9-1"></a>
+                <a href="https://www.figma.com/design/bky3T5pTAEV0D5AaWpV8KL/kepper's-realty?node-id=0-1&t=HKjLuST6lhpiMCy9-1">
+                  here
+                </a>
               </p>
             </div>
           </div>
